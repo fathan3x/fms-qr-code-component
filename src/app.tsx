@@ -11,16 +11,16 @@ export function App() {
   return (
     <main
       className={cn(
-        "w-screen h-screen flex items-center justify-center",
+        "w-screen h-screen flex items-center justify-center p-6",
         style["bg-slate-300"],
       )}
       style={{ fontFamily: "Outfit Variable" }}
     >
       <section className="p-6 bg-white rounded-xl max-w-94 w-full space-y-6 shadow-xl">
-        <img src={image} className="rounded-md h-80 w-full object-cover" />
+        <img src={image} className="rounded-md max-h-80 w-full object-cover" />
         <h1
           className={cn(
-            "text-center text-[26px] font-bold leading-tight px-4",
+            "text-center text-xl sm:text-[26px] font-bold leading-tight px-4",
             style["text-slate-900"],
           )}
         >
@@ -28,7 +28,7 @@ export function App() {
         </h1>
         <p
           class={cn(
-            "text-center font-medium pb-6 px-4 text-lg",
+            "text-center font-medium pb-6 px-4 sm:text-lg",
             style["text-slate-500"],
           )}
         >
