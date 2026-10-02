@@ -1,4 +1,5 @@
 import { cn } from "cn";
+import image from "./assets/qr-code.webp";
 import "@fontsource-variable/outfit";
 
 export function App() {
@@ -16,10 +17,7 @@ export function App() {
       style={{ fontFamily: "Outfit Variable" }}
     >
       <section className="p-6 bg-white rounded-xl max-w-94 w-full space-y-6 shadow-xl">
-        <img
-          src="/qr-code.webp"
-          className="rounded-md h-80 w-full object-cover"
-        />
+        <img src={image} className="rounded-md h-80 w-full object-cover" />
         <h1
           className={cn(
             "text-center text-[26px] font-bold leading-tight px-4",
